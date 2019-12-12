@@ -1,0 +1,13 @@
+@mixin childCenterXY {
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+@mixin childCenterX {
+	display: flex; 
+	justify-content: center;
+}
+@mixin childCenterY {
+	display: flex; 
+	align-items: center;
+}

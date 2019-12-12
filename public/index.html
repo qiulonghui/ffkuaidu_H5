@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+	<meta name="keywords" content="文字转语音软件；在线文字转语音；文字转语音工具；PDF文档取字；链接文章取字；传图取字；在线配音工具。">
+	<meta name="description"
+		content="讯飞快读是科大讯飞旗下的文字转语音工具。集合TTS语音合成、OCR图像识别、微信文章检索，网址链接取字、复刻声音功能，可用于广告视频配音、自媒体文章配音、txt小说朗读、教学课件朗读、办公文档或图片取字朗读。">
+	<link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+	<title>文字转语音小程序：讯飞快读，广告配音，在线读字器</title>
+	<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var NODE_ENV = '<%= VUE_APP_CURRENTMODE %>';
+			var url = '';
+			console.log(NODE_ENV)
+			if (NODE_ENV === 'test') {
+				url = 'https://hm.baidu.com/hm.js?0cc84c4ac299e3493dba57d02fb04f06';
+			}else if(NODE_ENV === 'prod'){
+				url = 'https://hm.baidu.com/hm.js?d2ccb9584d0dfe9ed148f03a3f4a1f96';
+			}
+			var hm = document.createElement("script");
+			hm.src = url;
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<noscript>
+		<strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+	</noscript>
+	<div id="app"></div>
+
+	<script src="https://unpkg.com/vue@2.6.10/dist/vue.min.js"></script>
+	<script src="https://unpkg.com/vue-router@3.0.3/dist/vue-router.min.js"></script>
+	<script src="https://unpkg.com/vuex@3.0.1/dist/vuex.min.js"></script>
+	<script src="https://unpkg.com/axios@0.19.0/dist/axios.min.js"></script>
+	<!-- built files will be auto injected -->
+</body>
+
+</html>
