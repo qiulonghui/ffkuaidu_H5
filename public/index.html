@@ -14,12 +14,12 @@
 	<script>
 		var _hmt = _hmt || [];
 		(function () {
-			var NODE_ENV = '<%= VUE_APP_CURRENTMODE %>';
+			var curMode = '<%= VUE_APP_CURRENTMODE %>';
 			var url = '';
-			console.log(NODE_ENV)
-			if (NODE_ENV === 'test') {
+			console.log(curMode)
+			if (curMode === 'test') {
 				url = 'https://hm.baidu.com/hm.js?0cc84c4ac299e3493dba57d02fb04f06';
-			}else if(NODE_ENV === 'prod'){
+			}else if(curMode === 'prod'){
 				url = 'https://hm.baidu.com/hm.js?d2ccb9584d0dfe9ed148f03a3f4a1f96';
 			}
 			var hm = document.createElement("script");
